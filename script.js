@@ -27,3 +27,8 @@
     cartItem.classList.remove('active');
     searchForm.classList.remove('active');
  }
+
+ const err = await axios.get('<https://test.org/status/404>').
+  catch(err => err);
+
+err.message; // 'Request failed with status code 404'
